@@ -14,7 +14,7 @@
 				"request":{
 					"type":"ON_CHANGE_FETCH_INPUT",
 					"apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/secondreplace.json",
+						"apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/secondreplace.json",
 						"type":"GET",
 						"headers":{
 							"Authorization":"sfsfsdffadssd",
@@ -41,7 +41,7 @@
                 "request":{
                 "type":"ON_CHANGE_FETCH_INPUT",
                 "apiEndPoint":{
-                "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/secondreplace.json",
+                "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe//master/secondreplace.json",
                 "type":"GET",
                 "headers":{
                   "Authorization":"sfsfsdffadssd",
@@ -296,7 +296,7 @@
                   "request":{
                   "type":"ON_CHANGE_FETCH_INPUT",
                   "apiEndPoint":{
-                  "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/secondreplace.json",
+                  "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/secondreplace.json",
                   "type":"GET",
                   "headers":{
                     "Authorization":"sfsfsdffadssd",
