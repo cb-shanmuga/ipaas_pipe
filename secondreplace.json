@@ -1,0 +1,316 @@
+{
+   "cards" : [
+  {
+         "card": {
+            "heading": "headingggg",
+            "type" : "DYNAMIC_INPUT",
+            "params": [
+               {  
+                 "dispName":"... subscription is <b>created</b>",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown2",
+                   "isDynamic":"true",
+				"request":{
+					"type":"ON_CHANGE_FETCH_INPUT",
+					"apiEndPoint":{
+						"apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/dynamicsample.json",
+						"type":"GET",
+						"headers":{
+							"Authorization":"sfsfsdffadssd",
+							"Elements-Formula-Instance-Id":"sfsfsdafsd"
+						},
+						"input":{
+							"id":"chargebee"
+						}
+					}
+				},
+                 "allowedValues":{
+                    "option1":"New2 - Create a deal",
+                    "option2":"New2 - Update a deal",
+                    "option3":"New2 - Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN_DYNAMIC",
+                 "id":"dropdown3",
+                "isDynamic":"true",
+                "request":{
+                "type":"ON_CHANGE_FETCH_INPUT",
+                "apiEndPoint":{
+                "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/dynamicsample.json",
+                "type":"GET",
+                "headers":{
+                  "Authorization":"sfsfsdffadssd",
+                  "Elements-Formula-Instance-Id":"sfsfsdafsd"
+                },
+                "input":{
+                  "id":"chargebee"
+                  }
+                  }
+                },
+                 "dropDownItemsList":[
+                     {
+                      "value":"option1",
+                        "disp":"New2 - Pipeline 1",
+                        "helptext":"Helptext1.  <a href=\"\" target=\"blank\">Learn More</a>"
+                     },
+                     {
+                      "value":"option2",
+                        "disp":"New2 - Pipeline 2",
+                        "helptext":"Helptext2. <a href=\"\" target=\"blank\">Learn More</a>"
+                     }
+                  ],
+                    "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown4",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription items are <b>updated</b>",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown5",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown6",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\">- Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown7",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription is deleted",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown8",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown9",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown10",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription is paused",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown11",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown12",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown13",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription is resumed",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown14",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown15",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown16",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription is cancelled",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown17",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":" <p style=\"padding-left: 10px;\">- Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown18",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown19",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"... subscription is reactivated",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown20",
+                 "allowedValues":{
+                    "option1":"Create a deal",
+                    "option2":"Update a deal",
+                    "option3":"Do Nothing"
+                 },
+                  "defaultVal":"option3"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown21",
+                 "allowedValues":{
+                    "option1":"Pipeline 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\"> - Choose the stage you'd like to add this deal to",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown22",
+                 "allowedValues":{
+                    "option1":"Stage 1"
+                 },
+                  "defaultVal":"option1"
+               },
+               {  
+                 "dispName":"<p style=\"padding-left: 10px;\">Choose how you'd like to update deal value in Pipedrive",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown23",
+                 "allowedValues":{
+                    "option1": "Don't update deal value",
+                    "option2": "Update deal value"
+                 },
+                  "defaultVal":"option1"
+               },
+               {       
+               "dispName":"Allow Chargebee to add notes to deals",
+                 "desc":"Enable if you want Chargebee to add notes to deals when changes are made to deal stage or deal value.",
+                 "req":"true",
+                 "type":"TOGGLE",
+                 "id":"toggle1"
+              },
+               {       
+               "dispName":"Toggle to fetch card - 2",
+                 "desc":"Enable if you want Chargebee to add notes to deals when changes are made to deal stage or deal value.",
+                 "req":"true",
+                 "type":"TOGGLE",
+                 "id":"toggle4",
+                  "isDynamic":"true",
+                  "request":{
+                  "type":"ON_CHANGE_FETCH_INPUT",
+                  "apiEndPoint":{
+                  "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/dynamicsample.json",
+                  "type":"GET",
+                  "headers":{
+                    "Authorization":"sfsfsdffadssd",
+                    "Elements-Formula-Instance-Id":"sfsfsdafsd"
+                  },
+                  "input":{
+                    "id":"chargebee"
+                    }
+                    }
+                  }
+              }
+            ]
+         },
+         "id" : "testdynamic"
+  }
+   ]
+}

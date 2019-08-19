@@ -1,0 +1,79 @@
+{
+   "logo":"/third_party/cn-xero.png",
+   "integDispName":"Pipedrive",
+   "subStepList":[
+      {
+         "stepName":"Connect",
+         "stepId":"connect",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect.json"
+         }
+      },
+      {
+         "stepName":"Sync Rules for Contacts",
+         "stepId":"step_1",
+         "apiEndPoint": {
+            "type":"GET",
+            "headers": {
+                    "Elements-Formula-Instance-Id": "388728"
+            },
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/samplecard.json"
+         },
+         "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+         }
+      },
+      {
+         "stepName":"Sync Rules for Deals",
+         "stepId":"step_2",
+         "apiEndPoint": {
+            "type":"GET",
+            "headers": {
+                    "Elements-Formula-Instance-Id": "388733"
+            },
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/sync_rules_deals.json"
+         },
+         "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+         }
+      },
+      {
+         "stepName":"Sync Fields",
+         "stepId":"step_3",
+         "apiEndPoint": {
+            "type":"GET",
+            "headers": {
+                    "Elements-Formula-Instance-Id": "388894"
+            },
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+         }
+      },
+      {
+         "stepName":"Data Validation",
+         "stepId":"step_4",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/data_validation.json"
+         }
+      },
+      {
+         "stepName":"Run Initial Sync",
+         "stepId":"step_5",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/initial_sync_step.json"
+         }
+      },
+      {
+         "stepName":"Final step",
+         "stepId":"completed",
+         "apiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+         }
+      }
+   ]
+}

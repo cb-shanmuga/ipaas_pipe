@@ -1,0 +1,194 @@
+{
+   "cards" : [
+	   
+	   {
+         "card": {
+            "type" : "MAPPING",
+            "heading":"Map Customers from Chargebee to Pipedrive",
+            "contents":"Choose a unique field to identify and sync customers from Chargebee to Pipedrive\n<a href=\"\" target=\"blank\">Learn More</a>",
+            "leftComponent":{
+		    "id":"left-comp",
+                  "title":"Chargebee Customer Field",
+                  "allowedValues":{
+			            "option1":"Left My List 2",
+			            "option2":"Left My List 3"
+                  },
+		    "defaultValue":"option1",
+		    "dataReq":"true"
+			         },
+             "rightComponent":{
+		     "id":"right-comp",
+                   "title":"Pipedrive Person Field",
+                   "allowedValues":{
+			              "option1":"My List 2",
+			              "option2":"My List 3"
+                   }
+			         }  
+         },
+         "id" : "checkmapp"
+      },
+	{
+         "card": {
+            "type" : "DYNAMIC_INPUT",
+            "heading":"Testing Dynamic DropDown",
+		"params": [
+			{  
+			         "dispName":"Choose customers you'd like to sync",
+			         "req":"true",
+			         "type":"DROPDOWN",
+			         "id":"dropdown1",
+				"isDynamic":"true",
+				"request":{
+					"type":"ON_CHANGE_FETCH_INPUT",
+					"apiEndPoint":{
+						"apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/testreplace.json",
+						"type":"GET",
+						"headers":{
+							"Authorization":"sfsfsdffadssd",
+							"Elements-Formula-Instance-Id":"sfsfsdafsd"
+						},
+						"input":{
+							"id":"chargebee"
+						}
+					}
+				},
+			         "allowedValues":{
+			            "option1":"Sync All Customers",
+			            "option2":"Test 1"
+			         }
+			},
+			{  
+                 	"dispName":"<p style=\"padding-left: 10px;\"> - Choose the pipeline you'd like to add this deal to",
+                 	"req":"true",
+                 	"type":"DROPDOWN_DYNAMIC",
+                 	"id":"dropdown3",
+			
+                 	"dropDownItemsList":[
+                 	   {
+                     	"value":"option1",
+                        "disp":"Pipeline 1",
+                        "helptext":"Helptext1. <a href=\"\" target=\"blank\">Learn More</a>"
+                 	   },
+                     	{
+                     	"value":"option2",
+                        "disp":"Pipeline 2",
+                        "helptext":"Helptext2.<a href=\"\" target=\"blank\">Learn More</a>"
+                 	   }
+                 	]
+               		}
+			]
+           
+         },
+         "id" : "checkdynamic"
+      },
+      {
+         "card": {
+            "type" : "INPUT",
+            "params": [
+            	{  
+			         "dispName":"Choose customers you'd like to sync",
+			         "req":"true",
+			         "type":"DROPDOWN",
+			         "id":"dropdown1",
+			         "allowedValues":{
+			            "option1":"Sync All Customers",
+			            "option2":"Test 1"
+			         }
+			    }
+            ]
+         },
+         "id" : "check1"
+      },
+      {
+         "card": {
+            "type" : "INPUT",
+            "params": [
+               {       
+               "dispName":"Allow Chargebee to create People in Pipedrive",
+                     "desc":"By default, existing people, if any, will be updated with the changes made in Chargebee. Disable if you dont want chargebee to create People in Pipedrive",
+                 "req":"true",
+                 "type":"TOGGLE",
+                 "id":"toggle1"
+              }
+            ]
+         },
+         "id" : "check2"
+      },
+      {
+         "card": {
+            "type" : "TOGGLE_HIDE_INPUT",
+            "params": [
+               {       
+                  "dispName":"Allow Chargebee to manage Organization in Pipedrive",
+                  "desc":"By default, Chargebee customers will be synced as People in Pipedrive. Enable if you want to allow Chargebee to add people to Organization, and create and update Organizations in Pipedrive.",
+                  "req":"true",
+                  "type":"TOGGLE",
+                  "id":"toggle2"
+               },
+               {  
+                  "dispName":"Choose what you'd like to do when a customer is synced to Pipedrive",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown2",
+                 "allowedValues":{
+                    "option1":"Group using 'Organization' name",
+                    "option2":"Do Nothing"
+                 },
+                  "defaultVal":"option2"
+               },
+               {       
+                  "dispName":"Sync Account Hierarchies from Chargebee to Pipedrive",
+                  "desc":"By default, Chargebee customers will be synced as People in Pipedrive. Enable if you want to allow Chargebee to add people to Organization, and create and update Organizations in Pipedrive.",
+                  "req":"true",
+                  "type":"TOGGLE",
+                  "id":"toggle3"
+               },
+          
+            ]
+         },
+         "id" : "check3"
+      },
+      {
+         "card": {
+            "type" : "INPUT",
+            "params": [
+               {  
+                  "dispName":"When a customer is deleted in Chargebee",
+                 "req":"true",
+                 "type":"DROPDOWN",
+                 "id":"dropdown3",
+                 "allowedValues":{
+                    "option1":"Do Nothing",
+                    "option2":"Mark 'Person'as 'Deleted'",
+                    "option3":"Mark 'Person' and 'Organization' as 'Deleted'"
+                 },
+                  "defaultVal":"option1"
+               }
+          
+            ]
+         },
+         "id" : "check4"
+      }
+    ],
+   "proceed":{
+      	"id":"proceed",
+      	"display" : "Proceed",
+      	"icon" : "ARROW",
+      	"buttonLook":"FILLED",
+      	"type" : "DIRECT_LINK",
+      	"request":{
+     		"type":"ON_CLICK_SEND_INPUT",
+     		"apiEndPoint":{
+            	"apiUrl":"https://raw.githubusercontent.com/shamim-keyvalue/ipass_pipedrive/master/connect_resp.json",
+            	"type":"GET",
+            	"headers":{
+               		"Authorization":"sfsfsdffadssd",
+               		"Elements-Formula-Instance-Id":"sfsfsdafsd"
+            	},
+            	"input":{
+               		"id":"chargebee"
+            	}
+         	}
+      	}
+    }
+}
