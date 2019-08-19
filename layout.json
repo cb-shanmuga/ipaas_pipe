@@ -7,7 +7,7 @@
          "stepId":"connect",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_local_pipedrive/master/connect.json"
          }
       },
       {
