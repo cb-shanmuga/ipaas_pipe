@@ -18,11 +18,11 @@
             "headers": {
                     "Elements-Formula-Instance-Id": "388728"
             },
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/samplecard.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/samplecard.json"
          },
          "backStepApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/connect_resp.json"
          }
       },
       {
@@ -33,11 +33,11 @@
             "headers": {
                     "Elements-Formula-Instance-Id": "388733"
             },
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/sync_rules_deals.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/sync_rules_deals.json"
          },
          "backStepApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/connect_resp.json"
          }
       },
       {
@@ -48,7 +48,7 @@
             "headers": {
                     "Elements-Formula-Instance-Id": "388894"
             },
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe//master/connect_resp.json"
          }
       },
       {
@@ -56,7 +56,7 @@
          "stepId":"step_4",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/data_validation.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/data_validation.json"
          }
       },
       {
@@ -64,7 +64,7 @@
          "stepId":"step_5",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/initial_sync_step.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/initial_sync_step.json"
          }
       },
       {
@@ -72,7 +72,7 @@
          "stepId":"completed",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-karthi/ipaas_local_pipedrive/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-shanmugar/ipaas_pipe/master/connect_resp.json"
          }
       }
    ]
